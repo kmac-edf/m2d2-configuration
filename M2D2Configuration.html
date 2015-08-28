@@ -22,7 +22,11 @@
               width: 46px;
               height: 47px;
           }
+          .tablePriMet{
+            width: 750px;
+          }
       </style>
+
   </head>
   <body>
     <div class="container">
@@ -95,144 +99,193 @@
             <div class="col-md-12">
             <h4>Sensors to Include for Primary Met:</h4>
             </div>
-            <div class="col-md-12">
-                <div class="col-md-5"></div>
-                <div class="col-md-1">AVG</div>
-                <div class="col-md-1">SDV</div>
-                <div class="col-md-1">MAX</div>
-                <div class="col-md-1">MIN</div>
+            <div class="col-md-9">
+                <table class="tablePriMet">
+                    <tbody>
+                        <tr>
+                            <th class="col-md-4" ></th>
+                            <th class="col-md-2" style="text-align:center">AVG</th>
+                            <th class="col-md-2" style="text-align:center">SDV</th>
+                            <th class="col-md-2" style="text-align:center">MAX</th>
+                            <th class="col-md-2" style="text-align:center">MIN</th>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-        <div class="bs-example">
-            <div class="panel-group" id="accordion">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Anemometers (4)<input type="checkbox" class="checkbox" checked="checked" /></a>
-                        </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in">
-                    <table class="table table-hover">
-                        <tbody>
-                            <tr>
-                                <th class="col-md-5">SPD_58_SW</th>
-                                <th class="col-md-1"><input type="checkbox" class="checkbox" checked="checked" /></th>
-                                <th class="col-md-1"><input type="checkbox" class="checkbox" /></th>
-                                <th class="col-md-1"><input type="checkbox" class="checkbox" /></th>
-                                <th class="col-md-1"><input type="checkbox" class="checkbox" /></th>
-                                <th class="col-md-3"></th>
-                            </tr>
-                            <tr>
-                                <th>SPD_58_N</th>
-                                <th><input type="checkbox" class="checkbox" checked="checked" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                            </tr>
-                            <tr>
-                                <th>SPD_38_SW</th>
-                                <th><input type="checkbox" class="checkbox" checked="checked" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                            </tr>
-                            <tr>
-                                <th>SPD_38_N</th>
-                                <th><input type="checkbox" class="checkbox" checked="checked" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                            </tr>
-                        </tbody>
-                    </table>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Wind Vanes (4)</a>
-                        </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse">
-                        <table class="table table-hover">
-                        <tbody>
-                            <tr>
-                                <th class="col-md-5">DIR_58_SW</th>
-                                <th class="col-md-1"><input type="checkbox" class="checkbox" checked="checked" /></th>
-                                <th class="col-md-1"><input type="checkbox" class="checkbox" /></th>
-                                <th class="col-md-1"><input type="checkbox" class="checkbox" /></th>
-                                <th class="col-md-1"><input type="checkbox" class="checkbox" /></th>
-                                <th class="col-md-3"></th>
-                            </tr>
-                            <tr>
-                                <th>DIR_58_N</th>
-                                <th><input type="checkbox" class="checkbox" checked="checked" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                            </tr>
-                            <tr>
-                                <th>DIR_38_SW</th>
-                                <th><input type="checkbox" class="checkbox" checked="checked" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                            </tr>
-                            <tr>
-                                <th>DIR_38_N</th>
-                                <th><input type="checkbox" class="checkbox" checked="checked" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                                <th><input type="checkbox" class="checkbox" /></th>
-                            </tr>
-                        </tbody>
-                    </table>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Relative Humidity (0)</a>
-                        </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse">
-                        <table class="table table-hover">
-                        <tbody>
-                        </tbody>
-                    </table>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Temperature (1)</a>
-                        </h4>
-                    </div>
-                    <div id="collapseFour" class="panel-collapse collapse">
-                        <table class="table table-hover">
-                        <tbody>
-                            <tr>
-                                <th class="col-md-5">TEMP_1</th>
-                                <th class="col-md-1"><input type="checkbox" class="checkbox" checked="checked" /></th>
-                                <th class="col-md-1"><input type="checkbox" class="checkbox" /></th>
-                                <th class="col-md-1"><input type="checkbox" class="checkbox" /></th>
-                                <th class="col-md-1"><input type="checkbox" class="checkbox" /></th>
-                                <th class="col-md-3"></th>
-                            </tr>
-                        </tbody>
-                    </table>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div>
+            <div class="col-md-9">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <table class="tablePriMet">
+                                    <tbody>
+                                        <tr>
+                                            <th class="col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Anemometers (4)</a></th>
+                                            <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                            <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                            <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                            <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in">
 
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <th class="col-md-4">SPD_58_SW</th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                </tr>
+                                <tr>
+                                    <th class="col-md-4">SPD_58_N</th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                </tr>
+                                <tr>
+                                    <th class="col-md-4">SPD_38_SW</th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                </tr>
+                                <tr>
+                                    <th class="col-md-4">SPD_38_N</th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <table class="tablePriMet">
+                                    <tbody>
+                                        <tr>
+                                            <th class="col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Wind Vanes (4)</a></th>
+                                            <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                            <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                            <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                            <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <th class="col-md-4">DIR_58_SW</th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                </tr>
+                                <tr>
+                                    <th class="col-md-4">DIR_58_N</th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                </tr>
+                                <tr>
+                                    <th class="col-md-4">DIR_38_SW</th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                </tr>
+                                <tr>
+                                    <th class="col-md-4">DIR_38_N</th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <table class="tablePriMet">
+                                    <tbody>
+                                        <tr>
+                                            <th class="col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Relative Humidity (0)</a></th>
+                                            <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                            <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                            <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                            <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <table class="table table-hover">
+                            <tbody>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <table class="tablePriMet">
+                                    <tbody>
+                                        <tr>
+                                            <th class="col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Temperature (1)</a></th>
+                                            <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                            <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                            <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                            <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <th class="col-md-4">TEMP_1</th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                    <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <button type="button" class="btn btn-default" aria-label="Left Align"><span class="glyphicon glyphicon-plus"></span> Add Met Asset for Reference</button>
+        </div>
+    </div>
+    <div>
         <div class="text-center">
             <button type="button" class="btn btn-default btn-lg" aria-label="Left Align"><span class="glyphicon glyphicon-send"></span> Save Configuration</button>
             <a><u>cancel</u></a>
         </div>
-        
-
     </div>
     
     
