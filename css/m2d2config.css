@@ -1,8 +1,8 @@
 /*!
  */
 
-html{
-  font-family:Arial, sans-serif;
+body{
+  font-family: sans-serif;
 }
 
 .bot {
@@ -12,6 +12,25 @@ html{
 .tablePriMet{
   width: 750px;
 }
+.tablePriMet tbody td{
+  text-align: center;
+}
+.tablePriMet tbody td:first-child{
+  text-align: left;
+  text: bold;
+}
 .tableAssocMet{
   width: 750px;
+}
+.add{
+  color: rgb(0,91,187);
+}
+.accordTitle{
+  color: rgb(0,26,112);
+}
+.accordTitleRef{
+  color: rgb(0,91,187);
+}
+.accordTitlePri{
+  color: rgb(0,26,112);
 }

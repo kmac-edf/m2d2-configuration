@@ -93,10 +93,10 @@
             <h4>Sensors to Include for Primary Met:</h4>
             </div>
             <div class="col-md-9">
-                <table class="tablePriMet">
+                <table class="tablePriMet" group="priMet">
                     <tbody>
                         <tr>
-                            <th class="col-md-4" ></th>
+                            <td class="col-md-4" ></td>
                             <th class="col-md-2" style="text-align:center">AVG</th>
                             <th class="col-md-2" style="text-align:center">SDV</th>
                             <th class="col-md-2" style="text-align:center">MAX</th>
@@ -112,10 +112,10 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <table class="tablePriMet">
+                                <table class="tablePriMet" group="priMet">
                                     <tbody>
                                         <tr>
-                                            <th class="col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapsePriMetOne">Anemometers (4)</a></th>
+                                            <td class="col-md-4"><a class="accordTitlePri" data-toggle="collapse" data-parent="#accordion" href="#collapsePriMetOne">Anemometers (4)</a></td>
                                             <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
                                             <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
                                             <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
@@ -125,11 +125,11 @@
                                 </table>
                             </h4>
                         </div>
-                        <div id="collapsePriMetOne" class="panel-collapse collapse in">
-                        <table class="table table-hover">
+                        <div id="collapsePriMetOne" class="panel-collapse collapse">
+                        <table class="table table-hover tablePriMet" group="priMet">
                             <tbody>
                                 <tr>
-                                    <th class="col-md-4">SPD_58_SW</th>
+                                    <td class="col-md-4">SPD_58_SW</td>
                                     <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
                                     <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
                                     <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
@@ -166,7 +166,7 @@
                                 <table class="tablePriMet">
                                     <tbody>
                                         <tr>
-                                            <th class="col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapsePriMetTwo">Wind Vanes (4)</a></th>
+                                            <th class="col-md-4"><a class="accordTitlePri" data-toggle="collapse" data-parent="#accordion" href="#collapsePriMetTwo">Wind Vanes (4)</a></th>
                                             <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
                                             <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
                                             <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
@@ -217,7 +217,7 @@
                                 <table class="tablePriMet">
                                     <tbody>
                                         <tr>
-                                            <th class="col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapsePriMetThree">Temperature (1)</a></th>
+                                            <th class="col-md-4"><a class="accordTitlePri" data-toggle="collapse" data-parent="#accordion" href="#collapsePriMetThree">Temperature (1)</a></th>
                                             <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
                                             <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
                                             <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
@@ -248,17 +248,17 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-            <h4>Reference Met Asset(s): <button type="button" class="btn btn-default" aria-label="Left Align"><span class="glyphicon glyphicon-plus"></span></button></h4>
+            <h4>Reference Met Asset(s): <button type="button" class="btn btn-default add" aria-label="Left Align"><span class="glyphicon glyphicon-plus"></span></button></h4>
             </div>
             <div class="col-md-9">
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseRefMetOne"><b>0762</b></a>
+                                <a class="accordTitlePri" data-toggle="collapse" data-parent="#accordion" href="#collapseRefMetOne"><b class="accordTitleRef">0762</b></a>
                             </h4>
                         </div>
-                        <div id="collapseRefMetOne" class="panel-collapse collapse in">
+                        <div id="collapseRefMetOne" class="panel-collapse collapse">
                             <table class="table-responsive">
                                 <tbody>
                                     <tr>
@@ -295,7 +295,7 @@
                                                             <table class="tableAssocMet">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <th class="col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapseRefMet1-1">Anemometers (4)</a></th>
+                                                                        <th class="col-md-4"><a class="accordTitlePri" data-toggle="collapse" data-parent="#accordion" href="#collapseRefMet1-1">Anemometers (4)</a></th>
                                                                         <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
                                                                         <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
                                                                         <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
@@ -305,7 +305,7 @@
                                                             </table>
                                                         </h5>
                                                     </div>
-                                                    <div id="collapseRefMet1-1" class="panel-collapse collapse in">
+                                                    <div id="collapseRefMet1-1" class="panel-collapse collapse">
                                                         <table class="table">
                                                             <tbody>
                                                                 <tr>
@@ -346,7 +346,7 @@
                                                             <table class="tableAssocMet">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <th class="col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapseRefMet1-2">Wind Vanes (2)</a></th>
+                                                                        <th class="col-md-4"><a class="accordTitlePri" data-toggle="collapse" data-parent="#accordion" href="#collapseRefMet1-2">Wind Vanes (2)</a></th>
                                                                         <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
                                                                         <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
                                                                         <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
@@ -356,7 +356,7 @@
                                                             </table>
                                                         </h5>
                                                     </div>
-                                                    <div id="collapseRefMet1-2" class="panel-collapse collapse in">
+                                                    <div id="collapseRefMet1-2" class="panel-collapse collapse">
                                                         <table class="table">
                                                             <tbody>
                                                                 <tr>
@@ -387,7 +387,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseRefMetTwo"><b>0763</b></a>
+                                <a class="accordTitlePri" data-toggle="collapse" data-parent="#accordion" href="#collapseRefMetTwo"><b class="accordTitleRef">0763</b></a>
                             </h4>
                         </div>
                         <div id="collapseRefMetTwo" class="panel-collapse collapse">
@@ -426,7 +426,7 @@
                                                             <table class="tableAssocMet">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <th class="col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapseRefMet2-1">Anemometers (4)</a></th>
+                                                                        <th class="col-md-4"><a class="accordTitlePri" data-toggle="collapse" data-parent="#accordion" href="#collapseRefMet2-1">Anemometers (4)</a></th>
                                                                         <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
                                                                         <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
                                                                         <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
@@ -436,7 +436,7 @@
                                                             </table>
                                                         </h5>
                                                     </div>
-                                                    <div id="collapseRefMet2-1" class="panel-collapse collapse in">
+                                                    <div id="collapseRefMet2-1" class="panel-collapse collapse background:white">
                                                         <table class="table">
                                                             <tbody>
                                                                 <tr>
@@ -477,7 +477,7 @@
                                                             <table class="tableAssocMet">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <th class="col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapseRefMet2-2">Wind Vanes (2)</a></th>
+                                                                        <th class="col-md-4"><a class="accordTitlePri" data-toggle="collapse" data-parent="#accordion" href="#collapseRefMet2-2">Wind Vanes (2)</a></th>
                                                                         <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
                                                                         <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
                                                                         <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
@@ -487,7 +487,7 @@
                                                             </table>
                                                         </h5>
                                                     </div>
-                                                    <div id="collapseRefMet2-2" class="panel-collapse collapse in">
+                                                    <div id="collapseRefMet2-2" class="panel-collapse collapse">
                                                         <table class="table">
                                                             <tbody>
                                                                 <tr>
@@ -522,7 +522,7 @@
     
     <div class="container">
         <div class="text-center">
-            <button type="button" class="btn btn-default btn-lg" aria-label="Left Align"><span class="glyphicon glyphicon-send"></span> Save Configuration</button>
+        <button type="button" class="btn btn-default btn-lg" aria-label="Left Align"><span class="glyphicon glyphicon-send"></span> Save Configuration</button>
             <a><u>cancel</u></a>
         </div>
     </div>
