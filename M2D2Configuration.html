@@ -25,6 +25,9 @@
           .tablePriMet{
             width: 750px;
           }
+          .tableAssocMet{
+            width: 750px;
+          }
       </style>
 
   </head>
@@ -35,7 +38,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-            <h4>Select Project</h4>
+            <h4>Project</h4>
             <div class="col-md-3">
                 <select id="cbProject" class="form-control">
                     <option value="0"></option>
@@ -47,7 +50,7 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <h4>Select Primary Met</h4>
+                <h4>Primary Met</h4>
                 <div class="col-md-10">
                 <select id="cbPriMet" class="form-control">
                     <option value="0"></option>
@@ -57,7 +60,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <h4>Select Scan Rate</h4>
+                <h4>Scan Rate</h4>
                 <div class="col-md-10">
                     <select id="cbScanRate" class="form-control">
                         <option value="0"></option>
@@ -71,7 +74,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h4>Select Date Range</h4>
+                <h4>Cleaning Date Range</h4>
                 <div class='col-md-3'>
                     <div class="form-group">
                         <div class='input-group date' id='datetimepicker6'>
@@ -225,29 +228,6 @@
                                 <table class="tablePriMet">
                                     <tbody>
                                         <tr>
-                                            <th class="col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Relative Humidity (0)</a></th>
-                                            <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
-                                            <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
-                                            <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
-                                            <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </h4>
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse">
-                            <table class="table table-hover">
-                            <tbody>
-                            </tbody>
-                        </table>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <table class="tablePriMet">
-                                    <tbody>
-                                        <tr>
                                             <th class="col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Temperature (1)</a></th>
                                             <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
                                             <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
@@ -276,12 +256,283 @@
             </div>
         </div>
     </div>
-    <div>
-        <div>
-            <button type="button" class="btn btn-default" aria-label="Left Align"><span class="glyphicon glyphicon-plus"></span> Add Met Asset for Reference</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <h4>Reference Met Asset(s): <button type="button" class="btn btn-default" aria-label="Left Align"><span class="glyphicon glyphicon-plus"></span></button></h4>
+            </div>
+            <div class="col-md-9">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseMetOne"><b>0762</b></a>
+                            </h4>
+                        </div>
+                        <div id="collapseMetOne" class="panel-collapse collapse in">
+
+                        <table class="table-responsive">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <div class="col-md-4">Reference Met
+                                            <select id="cbMetOneRef" class="form-control">
+                                                <option value="1">0762</option>
+                                                <option value="2">0763</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">Scan Rate
+                                            <select id="cbMetOneScan" class="form-control">
+                                                <option value="0"></option>
+                                                <option value="1">1 second</option>
+                                                <option value="2">3 second</option>
+                                                <option value="2">1 minute</option>
+                                                <option value="2">10 minute</option>
+                                            </select>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="col-md-1"><span><br/></span></th>
+                                </tr>
+                                <tr>
+                                    <th class="col-md-1">Sensors to Include:</th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="panel-group" id="accordion">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h5 class="panel-title">
+                                                        <table class="tableAssocMet">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th class="col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne1">Anemometers (4)</a></th>
+                                                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                    <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseOne1" class="panel-collapse collapse in">
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="col-md-4">SPD_58_SW</th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="col-md-4">SPD_58_N</th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="col-md-4">SPD_38_SW</th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="col-md-4">SPD_38_N</th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h5 class="panel-title">
+                                                        <table class="tableAssocMet">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th class="col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne2">Wind Vanes (2)</a></th>
+                                                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                    <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseOne2" class="panel-collapse collapse in">
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="col-md-4">DIR_58_SW</th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="col-md-4">DIR_58_N</th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseMetTwo"><b>0763</b></a>
+                            </h4>
+                        </div>
+                        <div id="collapseMetTwo" class="panel-collapse collapse">
+                            <table class="table-responsive">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <div class="col-md-4">Reference Met
+                                            <select id="cbMetOneRef" class="form-control">
+                                                <option value="2">0763</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">Scan Rate
+                                            <select id="cbMetOneScan" class="form-control">
+                                                <option value="0"></option>
+                                                <option value="1">1 second</option>
+                                                <option value="2">3 second</option>
+                                                <option value="2">1 minute</option>
+                                                <option value="2">10 minute</option>
+                                            </select>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="col-md-1"><span><br/></span></th>
+                                </tr>
+                                <tr>
+                                    <th class="col-md-1">Sensors to Include:</th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="panel-group" id="accordion">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h5 class="panel-title">
+                                                        <table class="tableAssocMet">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th class="col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne3">Anemometers (4)</a></th>
+                                                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                    <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseOne3" class="panel-collapse collapse in">
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="col-md-4">SPD_58_SW</th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="col-md-4">SPD_58_N</th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="col-md-4">SPD_38_SW</th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="col-md-4">SPD_38_N</th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h5 class="panel-title">
+                                                        <table class="tableAssocMet">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th class="col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne4">Wind Vanes (2)</a></th>
+                                                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                    <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                    <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseOne4" class="panel-collapse collapse in">
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="col-md-4">DIR_58_SW</th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"  /></th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="col-md-4">DIR_58_N</th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox"checked="checked" /></th>
+                                                                <th class="col-md-2"><input type="checkbox" class="checkbox" /></th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div>
+    
+    <div class="container">
         <div class="text-center">
             <button type="button" class="btn btn-default btn-lg" aria-label="Left Align"><span class="glyphicon glyphicon-send"></span> Save Configuration</button>
             <a><u>cancel</u></a>
